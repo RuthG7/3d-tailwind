@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+    }
+  </style>
+</head>
+<body class="font-sans bg-black">
+
+  <!-- Information Banner with Dropdown -->
+  <div class="bg-blue-500 text-white p-2 text-center">
+    <div class="flex items-center justify-between">
+      <div class="flex items-center">
+        <div class="mr-2">
+          <!-- Replace 'your-icon.svg' with your actual icon -->
+          <img src="your-icon.svg" alt="Info Icon" class="w-6 h-6">
+        </div>
+        <span class="cursor-pointer" id="toggleContent">Click to read more</span>
+      </div>
+      <!-- Dropdown icon -->
+      <div class="cursor-pointer">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-6 h-6" id="dropdownIcon">
+          <path d="M10 12a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 2a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 2a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"/>
+        </svg>
+      </div>
+      <!-- Add your additional information content here (hidden by default) -->
+      <div class="hidden mt-2">
+        <p class="text-white">Your additional information paragraph goes here.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <div class="flex">
+
+    <!-- Left Column with Icons -->
+    <div class="w-1/5 bg-black p-4">
+      <!-- Replace 'icon1.svg', 'icon2.svg', 'icon3.svg' with your actual icons -->
+      <div class="mb-4">
+        <img src="icon1.svg" alt="Icon 1" class="w-8 h-8">
+      </div>
+      <div class="mb-4">
+        <img src="icon2.svg" alt="Icon 2" class="w-8 h-8">
+      </div>
+      <div>
+        <img src="icon3.svg" alt="Icon 3" class="w-8 h-8">
+      </div>
+    </div>
+
+    <!-- Right Column with Video -->
+    <div class="w-4/5">
+      <!-- Replace 'your-video.mp4' with your actual video file -->
+      <video  class="w-full h-screen object-cover" id="videoPlayer" autoplay muted>
+        <source src="./Venus_Ext_16_US_Copilot_Moonstone Gray.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+
+  </div>
+  <script src='./app.js'>
+  </script>
+</body>
+</html>
